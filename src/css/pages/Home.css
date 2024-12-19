@@ -1,0 +1,14 @@
+.component{
+    margin: 12px 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contant-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
