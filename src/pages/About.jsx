@@ -1,5 +1,5 @@
 import React from 'react'
-import imagePath from '../images/image.jpg';
+import imagePath from '../../public/profile.png';
 import '../css/pages/About.css'
 
 function About() {

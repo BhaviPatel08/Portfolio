@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/pages/Home.css'
-import imagePath from '../images/image.jpg';
+import imagePath from '../../public/profile.png';
 
 function Home() {
   return (
