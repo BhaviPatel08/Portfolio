@@ -1,0 +1,77 @@
+/* About.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .my-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .my-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+  }
+  
+  .contant {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  
+  .paragraph-p1, 
+  .paragraph-p2 {
+    margin-bottom: 20px;
+  }
+  
+  .paragraph-p1 {
+    font-size: 1.2rem;
+    color: #34495e;
+  }
+  
+  .paragraph-p2 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .my-image img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .contant {
+      padding: 0 10px;
+    }
+  
+    .paragraph-p1, 
+    .paragraph-p2 {
+      font-size: 1rem;
+    }
+  }
+  

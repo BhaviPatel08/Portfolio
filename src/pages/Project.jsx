@@ -1,5 +1,5 @@
 import React from 'react'
-import MyNavbar from '../componentes/MyNavbar'
+import '../css/pages/Project.css'
 
 function Project() {
   return (
