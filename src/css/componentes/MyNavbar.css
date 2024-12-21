@@ -1,24 +1,104 @@
-.navbar{
-    padding: 24px;
+/* Navbar Container */
+.navbar-container {
+  width: 100%;
+  background-color: #f8f9fa; /* Light grey background */
+  color: #333333; /* Text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* Navbar Logo */
+.navbar-logo .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0d6efd; /* Primary color */
+}
+
+.navbar-logo .logo span {
+  color: #dc3545; /* Secondary color */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #495057; /* Neutral dark grey */
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #0d6efd; /* Primary color */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Active Link */
+.navbar-links a.active {
+  font-weight: bold;
+  color: #0d6efd; /* Highlighted color */
+  border-bottom: 2px solid #dc3545; /* Accent underline */
+}
+
+/* Navbar Toggle Button for Mobile */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+
+.navbar-toggle .toggle-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333333;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-toggle:hover .toggle-bar {
+  background-color: #0d6efd; /* Hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f8f9fa; /* Dropdown background */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  .navbar-links.open {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+  }
 
-.navbar-links{
+  .navbar-toggle {
     display: flex;
-    gap: 2rem;
-}
-
-.link{
-    text-decoration: none;
-}
-
-.navbar-container{
-    width: 100%;
-    border-bottom: 1px solid rgb(84, 79, 79);
-}
-
-.active{
-    border-bottom: 2px solid black;
+  }
 }
